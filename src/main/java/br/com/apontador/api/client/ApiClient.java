@@ -11,11 +11,6 @@ public class ApiClient {
 	private String key;
 	private String secret;
 	private String action;
-	private Restfulie client;
-
-	public ApiClient() {
-		client = new Restfulie();
-	}
 
 	public String getUri() {
 		return "http://" + getKey() + ":" + getSecret() + "@" + getHost() + "/"
@@ -64,13 +59,5 @@ public class ApiClient {
 
 	public void setAction(String action) {
 		this.action = action;
-	}
-
-	public Restfulie getClient() {
-		return client;
-	}
-
-	public void setClient(Restfulie client) {
-		this.client = client;
 	}
 }
