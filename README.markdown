@@ -20,7 +20,7 @@ a partir da raiz do projeto.
 
 ou
 
-cp src/main/resources/config.properties.example src/main/resources/config.properties
+	cp src/main/resources/config.properties.example src/main/resources/config.properties
 
 
 
