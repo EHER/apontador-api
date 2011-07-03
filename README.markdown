@@ -6,7 +6,7 @@ Wrapper da API do Apontador <http://api.apontador.com.br> usando o Restfulie <ht
 ## Setup do projeto
 
 Você precisa configurar as chaves de acesso da API Apontador. Para isso é 
-preciso ter um aplicativo cadastrado no Apontador. Veja o links abaixo!
+preciso ter um aplicativo cadastrado no Apontador. Veja os links abaixo!
 
 ### Criar um novo Aplicativo
 http://www.apontador.com.br/accounts/app/create.html
@@ -24,4 +24,14 @@ ou
 	cp src/main/resources/config.properties.example src/main/resources/config.properties
 
 
+Depois basta adicionar sua key e secret ao arquivo
 
+	src/main/resources/config.properties
+
+
+Vai ficar parecido com isso
+
+	HOST=api.apontador.com.br
+	PATH=v1
+	KEY=my_key
+	SECRET=my_secret
