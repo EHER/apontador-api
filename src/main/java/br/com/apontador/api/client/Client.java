@@ -1,11 +1,9 @@
 package br.com.apontador.api.client;
 
-import org.hamcrest.core.IsNull;
-
 import br.com.caelum.restfulie.Response;
 import br.com.caelum.restfulie.Restfulie;
 
-public class ApiClient {
+public class Client {
 	private String host;
 	private String path;
 	private String key;

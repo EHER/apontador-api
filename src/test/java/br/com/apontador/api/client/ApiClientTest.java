@@ -4,13 +4,11 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.sun.tools.internal.ws.processor.model.Response;
-
 public class ApiClientTest {
 
 	@Test
 	public void testGetUri() {
-		ApiClient client = new ApiClient();
+		Client client = new Client();
 		client.setHost("api.apontador.com.br");
 		client.setKey("aaaaa");
 		client.setSecret("bbbbb");
