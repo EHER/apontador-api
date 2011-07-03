@@ -1,54 +1,31 @@
 package br.com.apontador.api.client;
 
+import br.com.apontador.api.utils.Configuration;
 import br.com.caelum.restfulie.Response;
 import br.com.caelum.restfulie.Restfulie;
 
 public class Client {
-	private String host;
-	private String path;
-	private String key;
-	private String secret;
+	private static final String HOST;
+	private static final String PATH;
+	private static final String KEY;
+	private static final String SECRET;
 	private String action;
 
+	
+	static {
+		HOST = Configuration.getHost();
+		PATH = Configuration.getPath();
+		KEY = Configuration.getKey();
+		SECRET = Configuration.getSecret();
+	}
+	
 	public String getUri() {
-		return "http://" + getKey() + ":" + getSecret() + "@" + getHost() + "/"
-				+ getPath() + "/" + getAction();
+		return "http://" + KEY + ":" + SECRET + "@" + HOST + "/"
+				+ PATH + "/" + getAction();
 	}
 	
 	public Response get() {
 		return Restfulie.at(getUri()).get();
-	}
-
-	public String getHost() {
-		return host;
-	}
-
-	public void setHost(String host) {
-		this.host = host;
-	}
-
-	public String getPath() {
-		return path;
-	}
-
-	public void setPath(String path) {
-		this.path = path;
-	}
-
-	public String getKey() {
-		return key;
-	}
-
-	public void setKey(String key) {
-		this.key = key;
-	}
-
-	public String getSecret() {
-		return secret;
-	}
-
-	public void setSecret(String secret) {
-		this.secret = secret;
 	}
 
 	public String getAction() {
