@@ -1,9 +1,9 @@
-= Apontador Api Java
+# Apontador Api Java
 
 Wrapper da API do Apontador <http://api.apontador.com.br> usando o Restfulie <http://restfulie.caelum.com.br/>
 
 
-== Setup do projeto
+## Setup do projeto
 
 Você precisa configurar as chaves de acesso da API Apontador. Para isso é 
 preciso ter um aplicativo cadastrado no Apontador. Veja o links abaixo!
