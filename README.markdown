@@ -8,9 +8,10 @@ Wrapper da API do Apontador <http://api.apontador.com.br> usando o Restfulie <ht
 Você precisa configurar as chaves de acesso da API Apontador. Para isso é 
 preciso ter um aplicativo cadastrado no Apontador. Veja o links abaixo!
 
-Links rápidos para cadastro e listagem de Aplicativos do Apontador Api
-
+### Criar um novo Aplicativo
 http://www.apontador.com.br/accounts/app/create.html
+
+### Listar seus Aplicativos
 http://www.apontador.com.br/accounts/apps.html
 
 Para ter um novo arquivo de configuração, basta rodar um dos comandos abaixo
